@@ -1,7 +1,6 @@
 body {
   padding-top: 100px;
   text-align: center;
-  background: #2957ec;
   font-family: sans-serif;
   font-weight: 100;
 }
@@ -32,7 +31,7 @@ body {
 .value {
   padding: 15px;
   border-radius: 3px;
-  background: #00816a;
+  background: rgb(64, 199, 129);
   display: inline-block;
 }
 
@@ -41,4 +40,30 @@ body {
   display: block;
   padding-top: 5px;
   font-size: 16px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64, 199, 129);
+  box-shadow: 0 -3px rgb(53, 167, 110) inset;
+  transition: 0.2s;
+}
+.btn:hover {
+  background: rgb(53, 167, 110);
+}
+.btn:active {
+  background: rgb(33, 147, 90);
+  box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
+.btn:not(:last-child) {
+  margin-right: 50px;
 }
